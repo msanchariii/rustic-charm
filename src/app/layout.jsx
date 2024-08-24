@@ -18,9 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <head>
+            {/* <head>
                 <script defer src="https://cdn.tailwindcss.com"></script>
-            </head>
+            </head> */}
             <body className={raleway.className}>
                 <Header />
                 {children}
