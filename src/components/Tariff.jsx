@@ -16,7 +16,7 @@ function Tariff() {
                     <div className="w-full aspect-video bg-fuchsia-200 relative rounded-xl overflow-hidden">
                         <Image
                             fill={true}
-                            src={"/assets/image12.jpg"}
+                            src={"/rustic-charm/assets/image12.jpg"}
                             alt="front image"
                         />
                     </div>
@@ -52,7 +52,7 @@ function Tariff() {
                             <div className="relative w-full aspect-video">
                                 <Image
                                     fill={true}
-                                    src={"/front"}
+                                    src={"/rustic-charm/front"}
                                     alt="front image"
                                 />
                             </div>
@@ -69,14 +69,14 @@ function Tariff() {
                                 <div className="relative w-1/2 aspect-[4/3] bg-purple-300 rounded-lg overflow-hidden">
                                     <Image
                                         fill={true}
-                                        src={"/assets/image10.jpg"}
+                                        src={"/rustic-charm/assets/image10.jpg"}
                                         alt="front image"
                                     />
                                 </div>
                                 <div className="relative w-1/2 aspect-[4/3] bg-purple-300 rounded-lg overflow-hidden">
                                     <Image
                                         fill={true}
-                                        src={"/front"}
+                                        src={"/rustic-charm/front"}
                                         alt="front image"
                                     />
                                 </div>

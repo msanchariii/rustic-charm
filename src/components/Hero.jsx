@@ -1,6 +1,7 @@
 import { Sacramento } from "next/font/google";
 import { Raleway } from "next/font/google";
 import { Cambay } from "next/font/google";
+import Image from "next/image";
 
 const sacramento = Sacramento({
     subsets: ["latin"],
@@ -18,14 +19,18 @@ const cambay = Cambay({
     display: "swap",
     weight: "400",
 });
-
+// import image from "../assets/front";
 function Hero() {
     const images = ["/front"];
 
     return (
         <div
-            className={`p-4 bg-[url("/front")] bg-blend-overlay bg-black/70 flex items-center justify-center bg-clip-border bg-origin-border bg-center bg-no-repeat bg-cover min-h-screen relative`}
+            // style={{ backgroundImage: image }}
+            className={`p-4 bg-blend-overlay bg-black/70 flex items-center justify-center bg-clip-border bg-origin-border bg-center bg-no-repeat bg-cover min-h-screen relative`}
         >
+            <div className="w-full h-screen object-contain absolute top-0 left-0 -z-10">
+                <Image src="/rustic-charm/front" fill={true} alt="front" />
+            </div>
             <div className="space-y-8">
                 <h1
                     className="text-8xl font-semibold relative  align-middle text-center"
