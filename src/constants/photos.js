@@ -1,0 +1,80 @@
+const photos = [
+    {
+        src: "/assets/image1.jpg",
+        alt: "image1",
+        caption: "caption1",
+        title: "title1",
+        description: "description1",
+        aspect: "square",
+    },
+
+    {
+        src: "/assets/image3.jpg",
+        alt: "image3",
+        caption: "caption3",
+    },
+    {
+        src: "/assets/image4.jpg",
+        alt: "image4",
+        caption: "caption4",
+        aspect: "square",
+    },
+
+    {
+        src: "/assets/image6.jpg",
+        alt: "image6",
+        caption: "caption6",
+        aspect: "square",
+    },
+    {
+        src: "/assets/image7.jpg",
+        alt: "image7",
+        caption: "caption7",
+        aspect: "square",
+    },
+    {
+        src: "/assets/image8.jpg",
+        alt: "image8",
+        caption: "caption8",
+        aspect: "square",
+    },
+    {
+        src: "/assets/image9.jpg",
+        alt: "image9",
+        caption: "caption9",
+        aspect: "square",
+    },
+    {
+        src: "/assets/image10.jpg",
+        alt: "image10",
+        caption: "caption10",
+        aspect: "video",
+    },
+    {
+        src: "/assets/image11.jpg",
+        alt: "image11",
+        caption: "caption11",
+        aspect: "square",
+    },
+    {
+        src: "/assets/image12.jpg",
+        alt: "image12",
+        caption: "caption12",
+        aspect: "video",
+    },
+    {
+        src: "/assets/image13.jpg",
+        alt: "image13",
+        caption: "caption13",
+        aspect: "square",
+    },
+    {
+        src: "/assets/image14.jpg",
+        alt: "image14",
+        caption: "caption14",
+        aspect: "square",
+    },
+];
+
+const homePagePhotos = photos.slice(0, 9);
+export { photos, homePagePhotos };
