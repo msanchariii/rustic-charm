@@ -24,7 +24,7 @@ function Hero() {
 
     return (
         <div
-            className={`p-4 bg-[url("./front")] bg-blend-overlay bg-black/70 flex items-center justify-center bg-clip-border bg-origin-border bg-center bg-no-repeat bg-cover min-h-screen relative`}
+            className={`p-4 bg-[url("/front")] bg-blend-overlay bg-black/70 flex items-center justify-center bg-clip-border bg-origin-border bg-center bg-no-repeat bg-cover min-h-screen relative`}
         >
             <div className="space-y-8">
                 <h1
