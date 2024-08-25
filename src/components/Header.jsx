@@ -10,14 +10,16 @@ function Header() {
 
     const [active, setActive] = useState(false);
     const changeNavbar = () => {
-        if (window?.scrollY >= 80) {
+        if (typeof window != undefined && window?.scrollY >= 80) {
             setActive(true);
         } else {
             setActive(false);
         }
     };
 
-    window?.addEventListener("scroll", changeNavbar);
+    if (typeof window !== "undefined") {
+        window?.addEventListener("scroll", changeNavbar);
+    }
 
     return (
         <header
