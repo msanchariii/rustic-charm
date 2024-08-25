@@ -1,10 +1,10 @@
-const photos = [
+const images = [
     {
         src: "/assets/image1.jpg",
         alt: "image1",
         caption: "caption1",
-        title: "title1",
-        description: "description1",
+        // title: "title1",
+        // description: "description1",
         aspect: "square",
     },
 
@@ -75,6 +75,10 @@ const photos = [
         aspect: "square",
     },
 ];
-
+// photos => map every image to a new object with appending "/rustic-charm" to the src
+const photos = images.map((image) => ({
+    ...image,
+    src: `/rustic-charm${image.src}`,
+}));
 const homePagePhotos = photos.slice(0, 9);
 export { photos, homePagePhotos };

@@ -35,7 +35,7 @@ function ImageGallery({ images }) {
                 {images?.map(({ src, alt }, index) => (
                     <GalleryImage
                         key={index}
-                        imgSrc={`/rustic-charm${src}`}
+                        imgSrc={src}
                         onClickHandler={() => setIndex(index)}
                         alt={alt}
                     />
