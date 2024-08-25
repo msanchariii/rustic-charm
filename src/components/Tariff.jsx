@@ -8,7 +8,7 @@ const sacramento = Sacramento({
 
 function Tariff() {
     return (
-        <div className="w-full min-h-screen bg-sky-50 py-6">
+        <div className="w-full min-h-screen bg-sky-50 py-6" id="tariff">
             <h1 className="text-center font-bold text-4xl my-4">Tariff</h1>
             <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 p-6 space-y-4  max-w-xl mx-auto">

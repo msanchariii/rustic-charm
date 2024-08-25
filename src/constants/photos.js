@@ -3,8 +3,6 @@ const images = [
         src: "/assets/image1.jpg",
         alt: "image1",
         caption: "caption1",
-        // title: "title1",
-        // description: "description1",
         aspect: "square",
     },
 
