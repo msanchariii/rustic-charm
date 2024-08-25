@@ -1,7 +1,7 @@
 import React from "react";
 
-function NearbyAttractions() {
-    return <div>NearbyAttractions</div>;
+function NearbyAttractions({ className = "", ...props }) {
+    return <div className={`min-h-screen ${className}`}>NearbyAttractions</div>;
 }
 
 export default NearbyAttractions;

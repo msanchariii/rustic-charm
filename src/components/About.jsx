@@ -1,7 +1,11 @@
 import React from "react";
 
-function About() {
-    return <div>About</div>;
+function About({ className = "", ...props }) {
+    return (
+        <div className={`min-h-screen ${className}`} id="about">
+            About
+        </div>
+    );
 }
 
 export default About;

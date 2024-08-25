@@ -60,7 +60,8 @@ function Header() {
                     )}
                 </div>
                 {/* contact us button */}
-                <button
+                <Link
+                    href="/#contact"
                     className={`${
                         pathname == "/" && !active
                             ? "bg-white text-sky-500"
@@ -68,7 +69,7 @@ function Header() {
                     }  py-2 px-4 rounded-full `}
                 >
                     Contact
-                </button>
+                </Link>
             </div>
         </header>
     );
@@ -78,7 +79,7 @@ export default Header;
 
 const links = [
     { text: "Home", url: "/" },
-    { text: "Gallery", url: "/gallery" },
     { text: "About", url: "/#about" },
+    { text: "Gallery", url: "/gallery" },
     { text: "Tariff", url: "/#tariff" },
 ];

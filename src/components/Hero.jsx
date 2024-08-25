@@ -37,29 +37,28 @@ function Hero() {
                     style={{
                         // textShadow:
                         // "0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 20px #fffff, 0 0 40px #ffffff, 0 0 60px #ffffff, 0 0 10px #fff, 0 0 98px #fffff",
-                        textShadow: "rgba(255,255,255,1) 0px 0px 12px",
+                        // textShadow: "rgba(255,255,255,1) 0px 0px 12px",
                         color: "#fff",
                     }}
                 >
-                    <span className={sacramento.className}>
-                        Rustic Charm
-                        <br />
-                        Homestay
-                    </span>
+                    Rustic Charm
+                    <br />
+                    Homestay
                 </h1>
                 <p className="text-white text-center text-lg font-semibold w-full max-w-6xl mx-auto align-middle">
                     <span
                         className={raleway.className}
                         style={{
-                            textShadow: "rgba(255,255,255,1) 0px 0px 12px",
+                            // textShadow: "rgba(255,255,255,1) 0px 0px 12px",
                             color: "#fff",
                         }}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptas numquam accusamus ab dolorum corporis iure
-                        nostrum non obcaecati eligendi ipsam nihil
-                        exercitationem, eveniet expedita vel ratione vitae
-                        aliquam dolorem cumque.
+                        Discover Rustic Charm Homestay, your cozy mountain
+                        retreat in <em>Sitang</em> offering comfortable rooms,
+                        delicious home-cooked meals, and breathtaking views.
+                        Enjoy all-inclusive rates <em> at just Rs. 1500 </em>per
+                        person. Book now for a serene escape in the heart of
+                        nature!
                     </span>
                 </p>
                 {/* <div className="flex justify-center gap-x-12">

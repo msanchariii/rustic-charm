@@ -1,17 +1,17 @@
-import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
-import ImageGallery from "@/components/ImageGallery";
-import Tariff from "@/components/Tariff";
+import { Hero, About, ImageGallery, Tariff, Contact } from "@/components";
+import NearbyAttractions from "@/components/NearbyAttractions";
 import { homePagePhotos } from "@/constants/photos";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-    // const images = getHomePagePhotos();
     return (
         <main className="space-y-24">
+            {/* hero */}
             <Hero />
-            <div className="py-12 ">
+            {/* about us */}
+            <About />
+            {/* image gallery */}
+            <div className="py-12 bg-sky-50">
                 <ImageGallery images={homePagePhotos} />
                 <div className="w-full grid place-items-center">
                     <Link
@@ -22,7 +22,11 @@ export default function Home() {
                     </Link>
                 </div>
             </div>
+            {/* nearby attractions */}
+            <NearbyAttractions />
+            {/* tariff */}
             <Tariff />
+            {/* contact us */}
             <Contact />
         </main>
     );
