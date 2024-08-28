@@ -3,53 +3,73 @@ import { contacts } from "@/constants/data";
 function Contact() {
     return (
         <div className="w-full max-w-7xl mx-auto p-4 min-h-screen space-y-16">
-            <h2 className="text-4xl font-bold text-center">Contact Us</h2>
-            <div className="flex justify-center">
-                <div className="w-1/2 space-y-6">
+            <div className="space-y-4 p-2">
+                <h1 className="text-4xl font-medium text-left">Contact Us</h1>
+                <h2>
+                    We are always here to help you. Feel free to contact us for
+                    any queries.
+                </h2>
+            </div>
+            <div className="flex flex-col md:flex-row md:justify-between">
+                <div className="w-1/2 divide-y-2 p-2 md:order-2">
                     {/* address */}
-                    <div>
-                        <h2 className="text-2xl font-semibold">Address</h2>
-                        <p className="text-lg font-medium max-w-md">
-                            {contacts.address}
-                        </p>
-                    </div>
+                    <ContactItem
+                        title="Address"
+                        description={contacts.address}
+                    />
                     {/* how to reach */}
-                    <div>
-                        <h2 className="text-2xl font-semibold">How to Reach</h2>
-                        <p className="text-lg font-medium max-w-md">
-                            {contacts.howToReach}
-                        </p>
-                    </div>
+                    <ContactItem
+                        title="How to Reach"
+                        description={contacts.howToReach}
+                    />
                     {/* phone number */}
-                    <div>
-                        <h2 className="text-2xl font-semibold">Phone</h2>
-                        {contacts.phone.map((ph, i) => (
-                            <p key={i} className="text-lg font-medium max-w-md">
-                                {ph}
-                            </p>
-                        ))}
-                    </div>
+                    <ContactItem
+                        title="Phone"
+                        description={`${contacts.phone[0]}, ${contacts.phone[1]}`}
+                    />
                     {/* email */}
-                    <div>
-                        <h2 className="text-2xl font-semibold">Email</h2>
-                        <p className="text-lg font-medium max-w-md">
-                            {contacts.email}
-                        </p>
+                    <ContactItem title="Email" description={contacts.email} />
+                    <div className="py-4 my-2 px-1 flex space-x-3">
+                        <div className="p-2 h-full">
+                            <div className="h-[36px] aspect-square bg-purple-500 rounded-full"></div>
+                        </div>
+                        {/* <div className="space-y-2"> */}
+                        <h2 className="text-lg py-3 font-medium text-slate-700">
+                            Call us to book !
+                        </h2>
+                        {/* </div> */}
                     </div>
-                    {/* <p>{contacts.email}</p> */}
                 </div>
-                <iframe
-                    className="w-1/2 rounded-lg border shadow-lg "
-                    height="500"
-                    frameBorder="0"
-                    scrolling="no"
-                    marginHeight="0"
-                    marginWidth="0"
-                    src="https://maps.google.com/?ie=UTF8&t=m&ll=13.2164639,74.995161&spn=0.003381,0.017231&z=16&output=embed"
-                ></iframe>
+                {/* <div className="overflow-hidden rounded-full bg-rose-400 h-[124px] w-[124px]"> */}
+                <div className="p-2">
+                    <iframe
+                        className="w-full aspect-square p-1 m-2 rounded-2xl border shadow-lg "
+                        height="500"
+                        frameBorder="0"
+                        scrolling="no"
+                        marginHeight="0"
+                        marginWidth="0"
+                        src="https://maps.google.com/?ie=UTF8&t=m&ll=13.2164639,74.995161&spn=0.003381,0.017231&z=16&output=embed"
+                    ></iframe>
+                </div>
+                {/* </div> */}
             </div>
         </div>
     );
 }
 
 export default Contact;
+
+function ContactItem({ title, description }) {
+    return (
+        <div className="py-4 my-2 px-1 items-center flex space-x-3">
+            <div className="p-2">
+                <div className="h-[36px] aspect-square bg-purple-500 rounded-full"></div>
+            </div>
+            <div className="space-y-2">
+                <h2 className="text-lg font-medium">{title}</h2>
+                <p className="text-base font-light max-w-md">{description}</p>
+            </div>
+        </div>
+    );
+}

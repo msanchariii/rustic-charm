@@ -1,95 +1,47 @@
-import { Sacramento } from "next/font/google";
+import { Star } from "@/constants/icons";
+import { dancingScript } from "@/fonts";
 import Image from "next/image";
-const sacramento = Sacramento({
-    subsets: ["latin"],
-    display: "swap",
-    weight: "400",
-});
+import Link from "next/link";
 
 function Tariff() {
     return (
-        <div className="w-full min-h-screen bg-sky-50 py-6" id="tariff">
-            <h1 className="text-center font-bold text-4xl my-4">Tariff</h1>
-            <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row">
-                <div className="w-full md:w-1/2 p-6 space-y-4  max-w-xl mx-auto">
-                    {/* fare */}
-                    <div className="w-full aspect-video bg-fuchsia-200 relative rounded-xl overflow-hidden">
-                        <Image
-                            fill={true}
-                            src={"/rustic-charm/assets/image12.jpg"}
-                            alt="front image"
-                        />
+        <div className="w-full min-h-screen  py-6" id="tariff">
+            <div className="w-full max-w-7xl bg-slate-50/70 p-12 rounded-3xl mx-auto flex flex-col md:flex-row md:justify-between">
+                <div className="md:w-1/2 space-y-8 flex flex-col p-2">
+                    <div className="w-28 py-2 px-3 bg-white/80 rounded-full">
+                        <span className="font-semibold text-lg">4.5</span>
+                        {/* <Star /> */}
                     </div>
-                    <p className="text-5xl text-slate-900">
-                        <span
-                            className={`${sacramento.className}`}
-                            // style={{
-                            //     textShadow: "#0ea5e9 0px 0px 4px",
-                            //     // color: "#5747cc",
-                            //     color: "#0ea5e9",
-                            // }}
+                    <h1 className={`mx-auto text-left w-full text-4xl my-4`}>
+                        Tariff
+                    </h1>
+                    <h2 className="text-sm text-slate-600 font-medium max-w-sm">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Quaerat dicta quisquam quis amet quos expedita
+                        iure.
+                    </h2>
+                    <div className="text-lg space-y-4 divide-y-2 pr-4">
+                        {tariffPoints.map((item, index) => {
+                            return <Comp {...item} key={index} />;
+                        })}
+                    </div>
+                    <div className="py-8 flex-grow space-x-6">
+                        <Link
+                            href={"#contact"}
+                            className="bg-black text-white px-4 py-4 font-medium rounded-full relative "
                         >
-                            Small Mountain Homestay
-                        </span>
-                    </p>
-                    <p className="font-bold text-7xl text-slate-700 stroke-2 stroke-sky-300">
-                        Rs. 1500
-                    </p>
-                    <p className="font-bold font-mono">per person, per head</p>
-                    <div>{/* ta */}</div>
-                    {/* breakfast, lunch, dinner */}
-                    <p className="text-2xl font-mono font-semibold">
-                        breakfast <span className="font-semibold">|</span> lunch{" "}
-                        <span className="font-semibold">|</span> dinner
-                    </p>
-                    <p>Tea, Coffee</p>
-                    {/* tea, coffee */}
-                    {/* contact */}
-                </div>
-                <div className="w-full md:w-1/2 p-6 space-y-4">
-                    <div className="w-full h-full max-w-md mx-auto flex flex-col justify-between">
-                        <div className=" w-full rounded-lg">
-                            <div className="relative w-full aspect-video">
-                                <Image
-                                    fill={true}
-                                    src={"/rustic-charm/front"}
-                                    alt="front image"
-                                />
-                            </div>
-                            <div>
-                                <p className="font-bold font-mono text-5xl my-2">
-                                    <span className={sacramento.className}>
-                                        Cozy Rooms
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="flex gap-4">
-                                <div className="relative w-1/2 aspect-[4/3] bg-purple-300 rounded-lg overflow-hidden">
-                                    <Image
-                                        fill={true}
-                                        src={"/rustic-charm/assets/image10.jpg"}
-                                        alt="front image"
-                                    />
-                                </div>
-                                <div className="relative w-1/2 aspect-[4/3] bg-purple-300 rounded-lg overflow-hidden">
-                                    <Image
-                                        fill={true}
-                                        src={"/rustic-charm/front"}
-                                        alt="front image"
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                className={`text-5xl font-mono font-bold my-2`}
-                            >
-                                <span className={sacramento.className}>
-                                    breakfast, lunch, dinner
-                                </span>
-                            </div>
-                        </div>
+                            FAQs
+                        </Link>
+                        <Link
+                            href={"#contact"}
+                            className="bg-black text-white px-4 py-4 font-medium rounded-full relative "
+                        >
+                            Contact to Book
+                        </Link>
                     </div>
+                </div>
+                <div className="md:w-1/2 p-2">
+                    <div className="w-full rounded-2xl aspect-[5/6] bg-purple-300"></div>
                 </div>
             </div>
         </div>
@@ -97,3 +49,38 @@ function Tariff() {
 }
 
 export default Tariff;
+
+function Comp({ icon, text }) {
+    return (
+        <div className="flex items-center gap-x-4 py-2">
+            <div className="h-[32px] aspect-square bg-purple-600 rounded-full"></div>
+            <p className="text-base font-light">{text}</p>
+            {/* <div className="h-px w-full max-w-lg bg-slate-300"></div> */}
+        </div>
+    );
+}
+
+const tariffPoints = [
+    {
+        text: "Rs. 1500 /- per person",
+    },
+    {
+        // icon: "Breakfast, Dinner, Lunch Included",
+        text: "Breakfast, Dinner, Lunch Included",
+    },
+    {
+        // icon: "Rs. 1500 per person",
+        text: "Evening Snacks",
+    },
+    {
+        // icon: "5 - 10 Guests",
+        text: "Veg & Non-Veg",
+    },
+    {
+        text: "Wifi",
+    },
+    {
+        // icon: "Sittang, Darjeeling",
+        text: "Sittang, Darjeeling",
+    },
+];

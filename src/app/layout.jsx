@@ -2,6 +2,7 @@ import { Inter, Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { roboto } from "@/fonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,7 +41,7 @@ export default function RootLayout({ children }) {
             {/* <head>
                 <script defer src="https://cdn.tailwindcss.com"></script>
             </head> */}
-            <body className={raleway.className}>
+            <body className={inter.className}>
                 <Header />
                 {children}
                 <Footer />

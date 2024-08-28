@@ -29,7 +29,7 @@ function Header() {
                     : "  bg-white text-sky-500"
             }`}
         >
-            <div className="w-full max-w-7xl mx-auto flex justify-between items-center">
+            <div className="w-full max-w-7xl mx-auto flex flex-row justify-between items-center">
                 {/* icon */}
                 <div className="flex space-x-4">
                     <Facebook
@@ -46,7 +46,7 @@ function Header() {
                     />
                 </div>
                 {/* links */}
-                <div>
+                <div className="flex flex-col md:flex-row">
                     {links.map(
                         (
                             link // map function
