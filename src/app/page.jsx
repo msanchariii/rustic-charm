@@ -1,4 +1,5 @@
 import { Hero, About, ImageGallery, Tariff, Contact } from "@/components";
+import FAQ from "@/components/FAQ";
 import NearbyAttractions from "@/components/NearbyAttractions";
 import { homePagePhotos } from "@/constants/photos";
 import Link from "next/link";
@@ -26,6 +27,7 @@ export default function Home() {
             <NearbyAttractions />
             {/* tariff */}
             <Tariff />
+            <FAQ />
             {/* contact us */}
             <Contact />
         </main>

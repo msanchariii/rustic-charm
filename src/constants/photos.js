@@ -78,5 +78,5 @@ const photos = images.map((image) => ({
     ...image,
     src: `/rustic-charm${image.src}`,
 }));
-const homePagePhotos = photos.slice(0, 9);
+const homePagePhotos = photos.slice(0, 6);
 export { photos, homePagePhotos };

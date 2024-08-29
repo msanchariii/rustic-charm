@@ -1,9 +1,16 @@
 import React from "react";
+import Accordion from "./Accordion";
 
 function NearbyAttractions({ className = "", ...props }) {
     return (
         <div className="w-full min-h-screen  py-6" id="tariff">
-            <div className="w-full max-w-7xl p-12 rounded-3xl mx-auto flex flex-col md:flex-row md:justify-between"></div>
+            <Accordion
+                question="Bird Watching Zone"
+                answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dicta quisquam quis amet quos expedita iure."
+            />
+            <div className="w-full max-w-7xl p-12 rounded-3xl mx-auto flex flex-col md:flex-row md:justify-between">
+                hi
+            </div>
         </div>
     );
 }

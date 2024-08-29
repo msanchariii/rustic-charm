@@ -23,10 +23,10 @@ function Header() {
 
     return (
         <header
-            className={`w-full p-4 font-bold shadow text-xl fixed top-0 left-0 z-10 ${
+            className={`w-full px-4 py-2 font-medium text-lg fixed top-0 left-0 z-10 ${
                 pathname == "/" && !active
                     ? "bg-transparent text-white"
-                    : "  bg-white text-sky-500"
+                    : " shadow bg-white text-sky-500"
             }`}
         >
             <div className="w-full max-w-7xl mx-auto flex flex-row justify-between items-center">
@@ -83,5 +83,11 @@ const links = [
     { text: "Home", url: "/" },
     { text: "About", url: "/#about" },
     { text: "Gallery", url: "/gallery" },
-    { text: "Tariff", url: "/#tariff" },
+    { text: "Sightseeing", url: "/#sightseeing" },
+    { text: "Explore", url: "/#tariff" },
+    {
+        text: "FAQs",
+        url: "#faq",
+        // external: true
+    },
 ];
