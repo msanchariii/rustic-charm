@@ -1,6 +1,6 @@
 "use client";
-import { Facebook, Instagram, MailIcon } from "lucide-react";
 import Link from "next/link";
+import { dancingScript } from "@/fonts";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -9,6 +9,8 @@ function Header() {
     console.log("Pathname:: ", pathname);
 
     const [active, setActive] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const changeNavbar = () => {
         if (typeof window != undefined && window?.scrollY >= 80) {
             setActive(true);
@@ -21,6 +23,10 @@ function Header() {
         window?.addEventListener("scroll", changeNavbar);
     }
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <header
             className={`w-full px-4 py-2 font-medium text-lg fixed top-0 left-0 z-10 ${
@@ -29,49 +35,58 @@ function Header() {
                     : " shadow bg-white text-sky-500"
             }`}
         >
-            <div className="w-full max-w-7xl mx-auto flex flex-row justify-between items-center">
-                {/* icon */}
-                <div className="flex space-x-4">
-                    <Facebook
-                        size={32}
-                        className="hover:outline rounded-full p-1 hover:pointer"
-                    />
-                    <Instagram
-                        size={32}
-                        className="hover:outline rounded-full p-1"
-                    />
-                    <MailIcon
-                        size={32}
-                        className="hover:outline rounded-full p-1"
-                    />
+            {/* logo */}
+            <div className="flex max-w-7xl mx-auto justify-between">
+                {/* Logo */}
+                <div className="w-full max-w-7xl mx-auto flex flex-row justify-between items-center">
+                    <h1
+                        className={`text-3xl font-extrabold ${dancingScript.className}`}
+                    >
+                        Rustic Charm
+                    </h1>
                 </div>
+                {/* nav - larger screen */}
+                {/* <div className="flex-grow bg-red-500"> */}
+                <nav className="hidden md:flex md:items-center md:justify-between space-x-8 flex-grow">
+                    <div className="flex flex-row ">
+                        {links.map(
+                            (
+                                link // map function
+                            ) => (
+                                <Link
+                                    key={link.text}
+                                    href={link.url}
+                                    className="mx-4 hover:underline"
+                                >
+                                    {link.text}
+                                </Link>
+                            )
+                        )}
+                    </div>
+                    {/* contact us button */}
+                    <Link
+                        href="/#contact"
+                        className={`${
+                            pathname == "/" && !active
+                                ? "bg-white text-sky-600"
+                                : "text-white bg-sky-600"
+                        }  py-2 px-4 rounded-full text-base`}
+                    >
+                        Contact
+                    </Link>
+                </nav>
+                {/* </div> */}
+                {/* hamburger - phone */}
+
                 {/* links */}
-                <div className="flex flex-col md:flex-row">
-                    {links.map(
-                        (
-                            link // map function
-                        ) => (
-                            <Link
-                                key={link.text}
-                                href={link.url}
-                                className="mx-4 hover:underline"
-                            >
-                                {link.text}
-                            </Link>
-                        )
-                    )}
-                </div>
-                {/* contact us button */}
-                <Link
-                    href="/#contact"
-                    className={`${
-                        pathname == "/" && !active
-                            ? "bg-white text-sky-500"
-                            : "text-white bg-sky-500"
-                    }  py-2 px-4 rounded-full `}
-                >
-                    Contact
-                </Link>
+                {/* larger screens */}
+
+                {/* for mobile phone (hamburger menu) */}
+                {/* <div
+                    className="md:hidden"
+                    onClick={toggleMenu}
+                    aria-label="menu"
+                    /> */}
             </div>
         </header>
     );
@@ -80,13 +95,13 @@ function Header() {
 export default Header;
 
 const links = [
-    { text: "Home", url: "/" },
+    { text: "Home", url: "/#home" },
     { text: "About", url: "/#about" },
-    { text: "Gallery", url: "/gallery" },
-    { text: "Sightseeing", url: "/#sightseeing" },
+    { text: "Gallery", url: "/#gallery" },
+    // { text: "Sightseeing", url: "/#sightseeing" },
     { text: "Explore", url: "/#tariff" },
     {
-        text: "FAQs",
+        text: "FAQ",
         url: "#faq",
         // external: true
     },

@@ -12,19 +12,19 @@ export default function Home() {
             {/* about us */}
             <About />
             {/* image gallery */}
-            <div className="py-12 bg-sky-50">
+            <div className="py-12 bg-sky-50  ">
                 <ImageGallery images={homePagePhotos} />
                 <div className="w-full grid place-items-center">
                     <Link
                         href="/gallery"
-                        className="p-4 bg-sky-500 rounded-xl text-white font-bold text-center mx-auto"
+                        className="p-4 bg-sky-500 hover:bg-sky-400 rounded-xl text-white font-bold text-center mx-auto"
                     >
                         View All Images
                     </Link>
                 </div>
             </div>
             {/* nearby attractions */}
-            <NearbyAttractions />
+            {/* <NearbyAttractions /> */}
             {/* tariff */}
             <Tariff />
             <FAQ />

@@ -1,6 +1,6 @@
 const contacts = {
     address:
-        "Sitong Ph2, Khasmahal Lower Toryok, P.O. Bagora, Darjeeling, West Bengal, India",
+        " Sittong Ph2, Khasmahal Lower Toryok, P.O. Bagora, Darjeeling, West Bengal, India",
     howToReach: "We will pick you up from station or airport",
     pincode: "734226",
     phone: ["+91 8389020335", "+91 7908990805"],
@@ -26,10 +26,6 @@ const faq = [
                 answer: "You can cancel your booking up to 24 hours before your check-in date.",
             },
             {
-                question: "Can I Make changes to booking ?",
-                answer: "Yes, we offer discounts for groups of 5 or more guests.",
-            },
-            {
                 question: "How much advanced payment is required?",
                 answer: "We require a 50% advance payment to confirm your booking.",
             },
@@ -49,10 +45,6 @@ const faq = [
             {
                 question: "Do your rooms have private bathrooms?",
                 answer: "Yes, all our rooms have private bathrooms.",
-            },
-            {
-                question: "Do you provide room service?",
-                answer: "Yes, we provide room service for all our guests.",
             },
         ],
     },
@@ -89,10 +81,6 @@ const faq = [
     {
         subject: "General",
         faqs: [
-            {
-                question: "Are pets allowed?",
-                answer: "Yes, we allow pets. Please inform us in advance.",
-            },
             // wifi available, what are the nearest sightseeing, can you make arrangements for vehicles for sightseeing, can you pick up and drop at station or airport
             {
                 question: "Do you provide Wi-Fi?",
@@ -100,7 +88,7 @@ const faq = [
             },
             {
                 question: "What are the nearest sightseeing spots?",
-                answer: "The nearest sightseeing spots are Sittong, Takdah, Lamahatta, and Tinchuley.",
+                answer: "The nearest sightseeing spots include bird watching, pine forest, orange orchards, Lepcha waterfall, natural swimming pool, river camping, and bonfire.",
             },
             {
                 question:

@@ -2,7 +2,10 @@ import { contacts } from "@/constants/data";
 
 function Contact() {
     return (
-        <div className="w-full max-w-7xl mx-auto p-4 min-h-screen space-y-16">
+        <div
+            className="w-full max-w-7xl mx-auto p-4 min-h-screen space-y-16  "
+            id="contact"
+        >
             <div className="space-y-4 p-2">
                 <h1 className="text-4xl font-medium text-left">Contact Us</h1>
                 <h2>

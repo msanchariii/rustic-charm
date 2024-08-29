@@ -37,7 +37,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className="scroll-smooth">
             {/* <head>
                 <script defer src="https://cdn.tailwindcss.com"></script>
             </head> */}

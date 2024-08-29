@@ -14,7 +14,8 @@ function Hero() {
     return (
         <div
             // style={{ backgroundImage: image }}
-            className={`p-4 bg-blend-overlay bg-black/70 flex items-center justify-center bg-clip-border bg-origin-border bg-center bg-no-repeat bg-cover min-h-screen relative`}
+            className={`   p-4 bg-blend-overlay bg-black/70 flex items-center justify-center bg-clip-border bg-origin-border bg-center bg-no-repeat bg-cover min-h-screen relative`}
+            id="home"
         >
             <div className="w-full h-screen object-contain absolute top-0 left-0 -z-10">
                 <Image src="/rustic-charm/front" fill={true} alt="front" />
@@ -30,7 +31,7 @@ function Hero() {
                 <p className="text-slate-200 text-center text-base font-semibold w-full max-w-3xl xl:max-w-5xl mx-auto align-middle">
                     {/* <span className={raleway.className}> */}
                     Discover Rustic Charm Homestay, your cozy mountain retreat
-                    in <em>Sitang</em> offering comfortable rooms, delicious
+                    in <em> Sittong</em> offering comfortable rooms, delicious
                     home-cooked meals, and breathtaking views.
                     {/* </span> */}
                 </p>

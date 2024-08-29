@@ -17,14 +17,16 @@ function ImageGallery({ images }) {
     const [index, setIndex] = useState();
 
     return (
-        <div className="min-h-screen w-full max-w-7xl mx-auto pb-4 my-12 space-y-6">
+        <div
+            className="min-h-screen w-full max-w-7xl mx-auto pb-4 my-12 space-y-6"
+            id="gallery"
+        >
             <div className="p-4 space-y-6">
                 {/* <div className="bg-blue-600 w-36 h-10 rounded-full"></div> */}
-                <h2 className={`text-4xl text-left`}>Gallery</h2>
-                <h3 className="text-base max-w-lg font-medium text-slate-500">
-                    Lorem ipsum dolor sit. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Saepe, vero.
-                </h3>
+                <h2 className="text-3xl text-left p-2">Gallery</h2>
+                <p className="p-2 italic text-5xl max-w-5xl text-slate-600 font-extralight">
+                    A collection of images from our property.
+                </p>
             </div>
 
             <Lightbox
