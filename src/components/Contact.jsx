@@ -14,7 +14,7 @@ function Contact() {
                 </h2>
             </div>
             <div className="flex flex-col md:flex-row md:justify-between">
-                <div className="w-1/2 divide-y-2 p-2 md:order-2">
+                <div className="w-full md:w-1/2 divide-y-2 p-2 md:order-2">
                     {/* address */}
                     <ContactItem
                         title="Address"

@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function Header() {
     const pathname = usePathname();
-    console.log("Pathname:: ", pathname);
+    // console.log("Pathname:: ", pathname);
 
     const [active, setActive] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +40,7 @@ function Header() {
                 {/* Logo */}
                 <div className="w-full max-w-7xl mx-auto flex flex-row justify-between items-center">
                     <h1
-                        className={`text-3xl font-extrabold ${dancingScript.className}`}
+                        className={`text-2xl font-extrabold ${dancingScript.className}`}
                     >
                         Rustic Charm
                     </h1>
@@ -56,7 +56,7 @@ function Header() {
                                 <Link
                                     key={link.text}
                                     href={link.url}
-                                    className="mx-4 hover:underline"
+                                    className="mx-4 hover:underline text-sm"
                                 >
                                     {link.text}
                                 </Link>
@@ -66,11 +66,12 @@ function Header() {
                     {/* contact us button */}
                     <Link
                         href="/#contact"
+                        // scroll={false}
                         className={`${
                             pathname == "/" && !active
                                 ? "bg-white text-sky-600"
                                 : "text-white bg-sky-600"
-                        }  py-2 px-4 rounded-full text-base`}
+                        }  py-2 px-4 rounded-full text-sm`}
                     >
                         Contact
                     </Link>
@@ -102,7 +103,7 @@ const links = [
     { text: "Explore", url: "/#tariff" },
     {
         text: "FAQ",
-        url: "#faq",
+        url: "/#faq",
         // external: true
     },
 ];

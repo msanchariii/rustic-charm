@@ -3,12 +3,13 @@ import Link from "next/link";
 
 function Footer() {
     return (
-        <footer className="bg-slate-50 shadow relative overflow-hidden min-h-80">
+        <footer className="bg-slate-50 shadow relative overflow-hidden min-h-80 mt-16 lg:mt-24">
             <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
                 <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
                     <Link
                         className="inline-block rounded-full bg-sky-600 p-2 text-white shadow transition hover:bg-sky-500 sm:p-3 lg:p-4"
                         href="#home"
+                        scroll={false}
                     >
                         <span className="sr-only">Back to top</span>
 
@@ -33,7 +34,8 @@ function Footer() {
                         <li>
                             <Link
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="#"
+                                href="/#about"
+                                scroll={false}
                             >
                                 About
                             </Link>
@@ -42,27 +44,29 @@ function Footer() {
                         <li>
                             <Link
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="#"
+                                href="/gallery"
                             >
-                                Services
+                                Gallery
                             </Link>
                         </li>
 
                         <li>
                             <Link
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="#"
+                                href="/#contact"
+                                scroll={false}
                             >
-                                Projects
+                                Contact
                             </Link>
                         </li>
 
                         <li>
                             <Link
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="#"
+                                href="/#faq"
+                                scroll={false}
                             >
-                                Blog
+                                FAQ
                             </Link>
                         </li>
                     </ul>
