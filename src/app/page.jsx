@@ -1,5 +1,6 @@
 import { Hero, About, ImageGallery, Tariff, Contact } from "@/components";
 import FAQ from "@/components/FAQ";
+import Hero2 from "@/components/Hero2";
 import NearbyAttractions from "@/components/NearbyAttractions";
 import { homePagePhotos } from "@/constants/photos";
 import Link from "next/link";
@@ -8,7 +9,8 @@ export default function Home() {
     return (
         <main className="space-y-24">
             {/* hero */}
-            <Hero />
+            {/* <Hero /> */}
+            <Hero2 />
             {/* about us */}
             <About />
             {/* image gallery */}

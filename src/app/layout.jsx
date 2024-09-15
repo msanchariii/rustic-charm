@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { roboto } from "@/fonts";
+import Header2 from "@/components/Header2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,7 +43,8 @@ export default function RootLayout({ children }) {
                 <script defer src="https://cdn.tailwindcss.com"></script>
             </head> */}
             <body className={inter.className}>
-                <Header />
+                {/* <Header /> */}
+                <Header2 />
                 {children}
                 <Footer />
             </body>
