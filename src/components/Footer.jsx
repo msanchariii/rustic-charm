@@ -32,42 +32,42 @@ function Footer() {
 
                     <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
                         <li>
-                            <Link
+                            <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="/#about"
+                                href="/rustic-charm#about"
                                 scroll={false}
                             >
                                 About
-                            </Link>
+                            </a>
                         </li>
 
                         <li>
-                            <Link
+                            <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="/gallery"
+                                href="rustic-charm/gallery"
                             >
                                 Gallery
-                            </Link>
+                            </a>
                         </li>
 
                         <li>
-                            <Link
+                            <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="/#contact"
+                                href="/rustic-charm#contact"
                                 scroll={false}
                             >
                                 Contact
-                            </Link>
+                            </a>
                         </li>
 
                         <li>
-                            <Link
+                            <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="/#faq"
+                                href="/rustic-charm#faq"
                                 scroll={false}
                             >
                                 FAQ
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>

@@ -1,7 +1,6 @@
-import { Hero, About, ImageGallery, Tariff, Contact } from "@/components";
+import { About, ImageGallery, Tariff, Contact } from "@/components";
 import FAQ from "@/components/FAQ";
 import Hero2 from "@/components/Hero2";
-import NearbyAttractions from "@/components/NearbyAttractions";
 import { homePagePhotos } from "@/constants/photos";
 import Link from "next/link";
 

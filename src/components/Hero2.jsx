@@ -15,10 +15,10 @@ function Hero2() {
         <div className="px-4 pb-4 rounded-3xl overflow-hidden">
             <div
                 // style={{ backgroundImage: image }}
-                className={`bg-blend-overlay bg-black/70 rounded-3xl overflow-hidden flex items-center justify-center bg-clip-border bg-origin-border bg-center bg-no-repeat bg-cover min-h-screen relative`}
+                className={`bg-blend-overlay bg-black/70 rounded-3xl overflow-hidden flex items-center justify-center bg-clip-border bg-origin-border min-h-[90vh] bg-center bg-no-repeat bg-cover  relative`}
                 id="home"
             >
-                <div className="w-full h-screen object-contain absolute -z-10">
+                <div className="w-full h-[90vh] object-contain absolute -z-10">
                     <Image
                         src="/rustic-charm/front"
                         fill={true}
