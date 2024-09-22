@@ -15,15 +15,7 @@ export default function Home() {
             <About />
             {/* image gallery */}
             <div className="py-12 bg-sky-50  ">
-                <ImageGallery images={homePagePhotos} />
-                <div className="w-full grid place-items-center">
-                    <Link
-                        href="/gallery"
-                        className="p-4 bg-sky-500 hover:bg-sky-400 rounded-xl text-white font-bold text-center mx-auto"
-                    >
-                        View All Images
-                    </Link>
-                </div>
+                <ImageGallery />
             </div>
             <Tariff />
             <FAQ />

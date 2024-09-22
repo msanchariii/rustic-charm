@@ -72,11 +72,6 @@ const links = [
     { text: "Home", url: "/#home" },
     { text: "About", url: "/#about" },
     { text: "Gallery", url: "/#gallery" },
-    // { text: "Sightseeing", url: "/#sightseeing" },
-    { text: "Explore", url: "/#tariff" },
-    {
-        text: "FAQ",
-        url: "/#faq",
-        // external: true
-    },
+    { text: "Explore", url: "#tariff" },
+    { text: "FAQ", url: "#faq" },
 ];
