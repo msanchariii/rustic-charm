@@ -1,3 +1,4 @@
+"use client";
 import { About, ImageGallery, Tariff, Contact } from "@/components";
 import FAQ from "@/components/FAQ";
 import Hero2 from "@/components/Hero2";
@@ -24,9 +25,6 @@ export default function Home() {
                     </Link>
                 </div>
             </div>
-            {/* nearby attractions */}
-            {/* <NearbyAttractions /> */}
-            {/* tariff */}
             <Tariff />
             <FAQ />
             {/* contact us */}

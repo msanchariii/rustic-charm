@@ -6,26 +6,6 @@ import { useState } from "react";
 
 function Header2() {
     const pathname = usePathname();
-    // console.log("Pathname:: ", pathname);
-
-    // const [active, setActive] = useState(false);
-    // const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    // const changeNavbar = () => {
-    //     if (typeof window != undefined && window?.scrollY >= 80) {
-    //         setActive(true);
-    //     } else {
-    //         setActive(false);
-    //     }
-    // };
-
-    // if (typeof window !== "undefined") {
-    //     window?.addEventListener("scroll", changeNavbar);
-    // }
-
-    // const toggleMenu = () => {
-    //     setIsMenuOpen(!isMenuOpen);
-    // };
 
     return (
         <header
