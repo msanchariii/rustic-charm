@@ -7,7 +7,7 @@ function About({ className = "", ...props }) {
             <div className="w-full max-w-7xl mx-auto bg-sky-400/10 rounded-2xl min-h-screen p-12 space-y-16">
                 <div className="w-full max-w-7xl mx-auto p-2">
                     <h2 className="text-3xl text-left p-2">About Us</h2>
-                    <p className="p-2 italic text-5xl max-w-5xl text-slate-600 font-extralight">
+                    <p className="p-2 italic text-2xl md:text-5xl max-w-5xl text-slate-600 font-extralight">
                         We are a team of professionals who are passionate about
                         providing the best services to our clients.
                     </p>

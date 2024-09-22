@@ -37,7 +37,7 @@ function Contact() {
                             <div className="h-[36px] aspect-square bg-purple-500 rounded-full"></div>
                         </div>
                         {/* <div className="space-y-2"> */}
-                        <h2 className="text-lg py-3 font-medium text-slate-700">
+                        <h2 className="text-base md:text-lg py-3 font-medium text-slate-700">
                             Call us to book !
                         </h2>
                         {/* </div> */}
@@ -70,8 +70,10 @@ function ContactItem({ title, description }) {
                 <div className="h-[36px] aspect-square bg-purple-500 rounded-full"></div>
             </div>
             <div className="space-y-2">
-                <h2 className="text-lg font-medium">{title}</h2>
-                <p className="text-base font-light max-w-md">{description}</p>
+                <h2 className="text-base md:text-lg font-medium">{title}</h2>
+                <p className="text-sm md:text-base font-light max-w-md">
+                    {description}
+                </p>
             </div>
         </div>
     );

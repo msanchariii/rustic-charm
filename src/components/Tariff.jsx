@@ -26,7 +26,7 @@ function Tariff() {
                     </div>
                     <div className="py-8 flex-grow space-x-6">
                         <Link
-                            href={"#contact"}
+                            href="#contact"
                             className="bg-black text-white px-4 py-4 font-medium rounded-full relative "
                         >
                             Call us to Book !

@@ -41,7 +41,7 @@ function ImageGallery() {
                 <div className="p-4 space-y-6">
                     {/* <div className="bg-blue-600 w-36 h-10 rounded-full"></div> */}
                     <h2 className="text-3xl text-left p-2">Gallery</h2>
-                    <p className="p-2 italic text-5xl max-w-5xl text-slate-600 font-extralight">
+                    <p className="p-2 italic text-2xl md:text-5xl max-w-5xl text-slate-600 font-extralight">
                         A collection of images from our property.
                     </p>
                 </div>

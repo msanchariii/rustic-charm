@@ -13,7 +13,7 @@ function FAQ() {
             <div className="w-full bg-sky-50/40 py-12 space-y-6">
                 <div className="w-full max-w-7xl mx-auto p-2">
                     <h2 className="text-3xl text-left p-2">FAQs</h2>
-                    <p className="p-2 italic text-5xl max-w-5xl text-slate-600 font-extralight">
+                    <p className="p-2 italic text-2xl md:text-5xl max-w-5xl text-slate-600 font-extralight">
                         Frequently asked questions about our services and
                         amenities.
                     </p>
@@ -56,7 +56,9 @@ const Question = ({ question, answer }) => {
     return (
         <Accordion type="single" collapsible className="max-w-3xl ml-auto">
             <AccordionItem value="item-1">
-                <AccordionTrigger>{question}</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                    {question}
+                </AccordionTrigger>
                 <AccordionContent>{answer}</AccordionContent>
             </AccordionItem>
         </Accordion>
