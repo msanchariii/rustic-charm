@@ -69,9 +69,9 @@ function Header2() {
 export default Header2;
 
 const links = [
-    { text: "Home", url: "/#home" },
-    { text: "About", url: "/#about" },
-    { text: "Gallery", url: "/#gallery" },
+    { text: "Home", url: "#home" },
+    { text: "About", url: "#about" },
+    { text: "Gallery", url: "#gallery" },
     { text: "Explore", url: "#tariff" },
     { text: "FAQ", url: "#faq" },
 ];
