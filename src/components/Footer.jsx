@@ -1,4 +1,5 @@
 import { BackToTop } from "@/constants/icons";
+import { ArrowUpNarrowWide } from "lucide-react";
 import Link from "next/link";
 
 function Footer() {
@@ -6,15 +7,14 @@ function Footer() {
         <footer className="bg-slate-50 shadow relative overflow-hidden min-h-80 mt-16 lg:mt-24">
             <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
                 <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
-                    <Link
+                    <a
                         className="inline-block rounded-full bg-sky-600 p-2 text-white shadow transition hover:bg-sky-500 sm:p-3 lg:p-4"
                         href="#home"
                         scroll={false}
                     >
                         <span className="sr-only">Back to top</span>
-
-                        <BackToTop />
-                    </Link>
+                        <ArrowUpNarrowWide />
+                    </a>
                 </div>
 
                 <div className="lg:flex lg:items-end lg:justify-between">

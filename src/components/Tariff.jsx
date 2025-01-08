@@ -1,4 +1,3 @@
-import { dancingScript } from "@/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { MapPinCheck } from "@/constants/icons";
