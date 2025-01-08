@@ -1,16 +1,21 @@
-import { Star } from "@/constants/icons";
 import { dancingScript } from "@/fonts";
 import Image from "next/image";
 import Link from "next/link";
+import { MapPinCheck } from "@/constants/icons";
+import { CookingPotIcon, IndianRupee, Star, Vegan, Wifi } from "lucide-react";
 
 function Tariff() {
     return (
         <div className="w-full min-h-screen py-6" id="tariff">
             <div className="w-full max-w-7xl bg-sky-50/70 p-12 rounded-3xl mx-auto flex flex-col md:flex-row md:justify-between">
                 <div className="md:w-1/2 space-y-8 flex flex-col p-2">
-                    <div className="w-28 py-2 px-3 bg-white/80 rounded-full">
-                        <span className="font-semibold text-lg">4.5</span>
-                        {/* <Star /> */}
+                    <div className="w-64 py-2 px-3 bg-white/80 rounded-full flex items-center justify-center space-x-2">
+                        <span className="font-semibold text-xl">5.0</span>
+                        <Star fill="purple" stroke="purple" />
+                        <Star fill="purple" stroke="purple" />
+                        <Star fill="purple" stroke="purple" />
+                        <Star fill="purple" stroke="purple" />
+                        <Star fill="purple" stroke="purple" />
                     </div>
                     <h1 className={`mx-auto text-left w-full text-4xl my-4`}>
                         Explore
@@ -20,9 +25,21 @@ function Tariff() {
                         Donec auctor, turpis id vestibulum
                     </h2>
                     <div className="text-lg space-y-4 divide-y-2 pr-4">
-                        {tariffPoints.map((item, index) => {
-                            return <Comp {...item} key={index} />;
-                        })}
+                        <ExploreComponent text={explore.tariff}>
+                            <IndianRupee />
+                        </ExploreComponent>
+                        <ExploreComponent text={explore.location}>
+                            <MapPinCheck />
+                        </ExploreComponent>
+                        <ExploreComponent text={explore.meals}>
+                            <CookingPotIcon />
+                        </ExploreComponent>
+                        <ExploreComponent text={explore.isVeg}>
+                            <Vegan />
+                        </ExploreComponent>
+                        <ExploreComponent text={explore.wifi}>
+                            <Wifi />
+                        </ExploreComponent>
                     </div>
                     <div className="py-8 flex-grow space-x-6">
                         <Link
@@ -50,37 +67,20 @@ function Tariff() {
 
 export default Tariff;
 
-function Comp({ icon, text }) {
+function ExploreComponent({ text, children }) {
     return (
         <div className="flex items-center gap-x-4 py-2">
-            <div className="h-[32px] aspect-square bg-purple-600 rounded-full"></div>
+            {children}
             <p className="text-base font-light">{text}</p>
             {/* <div className="h-px w-full max-w-lg bg-slate-300"></div> */}
         </div>
     );
 }
 
-const tariffPoints = [
-    {
-        text: "Rs. 1500 /- per person",
-    },
-    {
-        // icon: "Breakfast, Dinner, Lunch Included",
-        text: "Breakfast, Dinner, Lunch Included",
-    },
-    {
-        // icon: "Rs. 1500 per person",
-        text: "Evening Snacks",
-    },
-    {
-        // icon: "5 - 10 Guests",
-        text: "Veg & Non-Veg",
-    },
-    {
-        text: "Wifi",
-    },
-    {
-        // icon: " Sittong, Darjeeling",
-        text: " Sittong, Darjeeling",
-    },
-];
+const explore = {
+    tariff: "Rs. 1500 /- per person",
+    meals: "Breakfast, Lunch, Evening Snacks & Dinner Included",
+    isVeg: "Both Veg & Non-Veg",
+    wifi: "Wifi available",
+    location: "Sittong, Darjeeling",
+};
